@@ -15,7 +15,44 @@ The goal is to provide a **robust, accurate, and explainable AI framework** for 
 
 ---
 
-## 🏗️ Model Architecture  
+# RNN-based EEG Classifier (Model- 1)
+
+For my first model, I implemented a **Recurrent Neural Network (RNN)** with **Bidirectional LSTM layers** to capture sequential dependencies in EEG signals. The model uses regularization and hyperparameter tuning for optimal performance.
+
+## Model Architecture
+
+- **Input Layer:** 178 timesteps × 1 feature  
+- **Bidirectional LSTM Layer 1:** captures forward and backward temporal dependencies  
+- **Dropout Layer 1:** prevents overfitting  
+- **Batch Normalization 1:** stabilizes and speeds up training  
+- **Bidirectional LSTM Layer 2:** extracts higher-level temporal features  
+- **Dropout Layer 2**  
+- **Batch Normalization 2**  
+- **Dense Layer:** transforms features for classification  
+- **Dropout Layer 3**  
+- **Output Layer:** single neuron with sigmoid activation for binary classification  
+
+## Performance Metrics
+
+| Dataset      | Accuracy |
+|-------------|---------|
+| Training    | 0.9877  |
+| Validation  | 0.9813  |
+| Test        | 0.9800  |
+
+**Highlights:**
+
+- Bidirectional LSTM layers capture temporal patterns in EEG signals.  
+- Dropout and Batch Normalization improve generalization and stability.  
+- Hyperparameter tuning optimizes layer sizes, dropout rates, and learning rate.  
+- High generalization, as shown by consistent validation and test accuracy.  
+
+---
+
+This model serves as the **baseline sequential model** before exploring more advanced architectures like GRU and attention mechanisms.
+
+
+## 🏗️ Final Model Architecture  (Model -2)
 - **Input**: EEG sequences (178 time steps, 1 channel)  
 - **Layers**:  
   - Bidirectional GRU (2 stacked layers)  
@@ -45,7 +82,7 @@ Test Accuracy:       0.9963
 
 ## 🔄 Data Augmentation Pipeline
 
-The project includes a comprehensive **data augmentation pipeline** designed specifically for EEG time series data to enhance model performance and robustness [web:7][web:10]. The augmentation methods preserve the temporal and frequency characteristics of EEG signals while increasing dataset diversity.
+The project includes a comprehensive **data augmentation pipeline** designed specifically for EEG time series data to enhance model performance and robustness. The augmentation methods preserve the temporal and frequency characteristics of EEG signals while increasing dataset diversity.
 
 ### Augmentation Techniques
 
