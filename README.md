@@ -1,4 +1,4 @@
-# 🧠 Electroencephalogram-Based Seizure Detection & Prediction using BCI  
+# Electroencephalogram-Based Seizure Detection & Prediction using BCI  
 
 <p align="center">
   <img src="https://img.shields.io/badge/Deep%20Learning-GRU%20%7C%20Attention-blue?style=for-the-badge" />
