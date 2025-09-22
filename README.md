@@ -24,7 +24,8 @@ The goal is to provide a **robust, accurate, and explainable AI framework** for 
   - Dense (ReLU) + Dropout  
   - Sigmoid Output for Binary Classification  
 
-# Core Highlights:
+```python
+# Core Highlights
 # - Bidirectional GRU layers for sequential EEG learning
 # - Temporal Attention Mechanism for interpretability
 # - Bayesian Optimization for hyperparameter tuning
@@ -33,6 +34,8 @@ The goal is to provide a **robust, accurate, and explainable AI framework** for 
 # These components collectively enhance the model's ability to accurately
 # capture temporal dependencies in EEG signals while maintaining
 # generalization and interpretability.
+```
+
 
 
 ## 🔄 Data Augmentation Pipeline
