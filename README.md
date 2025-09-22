@@ -25,15 +25,20 @@ The goal is to provide a **robust, accurate, and explainable AI framework** for 
   - Sigmoid Output for Binary Classification  
 
 ```python
-# Core Highlights
-# - Bidirectional GRU layers for sequential EEG learning
-# - Temporal Attention Mechanism for interpretability
-# - Bayesian Optimization for hyperparameter tuning
-# - Early Stopping to prevent overfitting
-#
-# These components collectively enhance the model's ability to accurately
-# capture temporal dependencies in EEG signals while maintaining
-# generalization and interpretability.
+Core Highlights
+- Bidirectional GRU layers for sequential EEG learning
+- Temporal Attention Mechanism for interpretability
+- Bayesian Optimization for hyperparameter tuning
+- Early Stopping to prevent overfitting
+
+These components collectively enhance the model's ability to accurately
+capture temporal dependencies in EEG signals while maintaining
+generalization and interpretability.
+
+Model Performace:
+Training Accuracy:   0.9992
+Validation Accuracy: 0.9980
+Test Accuracy:       0.9963
 ```
 
 
